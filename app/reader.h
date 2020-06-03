@@ -52,16 +52,11 @@ public: // functions
    * 程序定义的接口
    * @param info [description]
    */
-    static void Initialize(
-        const Nan::FunctionCallbackInfo<v8::Value> &info); // 初始化
-    static void GetVector(
-        const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取词向量
-    static void FindClosestWords(
-        const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取最近临词汇
-    static void GetEmbeddingDim(
-        const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取词向量维度
-    static void GetVocabSize(
-        const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取词表大小
+    static void Initialize(const Nan::FunctionCallbackInfo<v8::Value> &info); // 初始化
+    static void GetVector(const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取词向量
+    static void FindClosestWords(const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取最近临词汇
+    static void GetEmbeddingDim(const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取词向量维度
+    static void GetVocabSize(const Nan::FunctionCallbackInfo<v8::Value> &info); // 获取词表大小
 };
 } // namespace word2vec
 } // namespace synonyms
